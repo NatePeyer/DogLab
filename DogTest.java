@@ -53,5 +53,18 @@ public class DogTest
         lotsOfDogs.add(lab3);
         lotsOfDogs.add(york3);
 
+        for(int i = 0; i < lotsOfDogs.size(); i++)
+        {
+            //System.out.println(i);
+            System.out.println(lotsOfDogs.get(i).bark());
+        }
+
+        for (Dog bob: lotsOfDogs)
+        {
+            //System.out.println();
+            System.out.println(bob.bark());
+        }
+
+        ((Labrador)lab3).waddle();
     }
 }
